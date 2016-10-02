@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .fit { /* set relative picture size */
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .center {
+      display: block;
+      margin: auto;
+    }
+  </style>
+
     <meta charset="utf-8">
     <title>Don't let your dreams be dreams</title>
   </head>
@@ -8,6 +23,24 @@
   <body>
     <a href="https://kwokeric.github.io/kwokeric.github.io/recipe.html">Elevate your burrito game.</a>
 
-    <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-429842.jpg"/>
+    <img class="center fit" src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-429842.jpg"/>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" language="JavaScript">
+      function set_body_height() { // set body height = window height
+        $('body').height($(window).height());
+      }
+      $(document).ready(function() {
+        $(window).bind('resize', set_body_height);
+        set_body_height();
+      });
+    </script>
   </body>
+</html>
+
+<html>
+<body background="bgimage.jpg">
+<h1>Hello world!</h1>
+<p><a href="http://www.w3schools.com">Visit W3Schools.com!</a></p>
+</body>
 </html>
