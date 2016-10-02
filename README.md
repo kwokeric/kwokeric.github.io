@@ -1,3 +1,3 @@
 # kwokeric.github.io
 
-WHERE'S MY WEBSITE?
+Don't let your dreams be dreams
