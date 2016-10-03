@@ -2,17 +2,37 @@
 <html>
   <head>
   <style>
-    * {
-      padding: 0;
-      margin: 0;
+    body {
+      background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-429842.jpg");
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: top center !important;
+      background-repeat: no-repeat !important;
+      background-attachment: fixed;
     }
-    .fit { /* set relative picture size */
-      max-width: 100%;
-      max-height: 100%;
+
+    h1 {
+      font: 20px/80px Helvetica, serif;
+      text-align: center;
+
     }
-    .center {
-      display: block;
-      margin: auto;
+
+    a:link {
+        color: #E9DEC5;
+        text-decoration: none;
+    }
+    a:visited {
+        color: #E9DEC5;
+        text-decoration: none;
+    }
+    a:hover {
+        color: white;
+        text-decoration: none;
+    }
+    a:active {
+        color: white;
+        text-decoration: none;
     }
   </style>
 
@@ -20,20 +40,8 @@
     <title>Don't let your dreams be dreams</title>
   </head>
 
-  <body>
+  <h1>
     <a href="https://kwokeric.github.io/kwokeric.github.io/recipe.html">Elevate your burrito game.</a>
 
-    <img class="center fit" src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-429842.jpg"/>
-
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" language="JavaScript">
-      function set_body_height() { // set body height = window height
-        $('body').height($(window).height());
-      }
-      $(document).ready(function() {
-        $(window).bind('resize', set_body_height);
-        set_body_height();
-      });
-    </script>
-  </body>
+  </h1>
 </html>
