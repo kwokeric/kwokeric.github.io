@@ -26,6 +26,7 @@
     li a:hover {
         background-color: #111;
     }
+
   </style>
 
   <header>
@@ -82,6 +83,38 @@
     </ol>
   </section>
 
+  <section id="reviews">
+  <h2>Reviews</h2>
+   <form action="/reviews" method="post">
+
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name"><br>
+
+    <label for="rating">Rating</label>
+      1<input type="radio" name="rating" value="1" checked>
+      2<input type="radio" name="rating" value="2">
+      3<input type="radio" name="rating" value="3">
+      4<input type="radio" name="rating" value="4">
+      5<input type="radio" name="rating" value="5"><br>
+
+    <label for="expertise">Cooking Expertise</label>
+      <select id="expertise" name="expertise">
+      <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
+      <option value="Sometimes Cook">Sometimes Cook</option>
+      <option value="Cook Everyday">Cook Everyday</option>
+      <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+      <option value="Professional Chef">Professional Chef</option>
+    </select><br>
+
+    <label>Review
+      <textarea name="review" cols="30" rows="6"></textarea>
+    </label><br>
+
+    <input type="submit" value="Submit Review">
+    </form>
+ </section>
+
+<br><br>
   <footer>
       You thought you could recreate my burrito??
       <a href="http://i.imgur.com/A2e45.gif">I am the source.</a>
