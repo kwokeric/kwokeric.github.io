@@ -41,6 +41,11 @@
         background-color: #111;
     }
 
+    .center {
+      margin: auto;
+      width: 60%;
+      padding: 10px;
+    }
   </style>
 
   <header>
@@ -56,7 +61,7 @@
     </nav>
   </header>
 
-  <section>
+  <section class="center">
     <h2>Description</h2>
     <a name="Description"></a>
     <figure>
@@ -101,17 +106,17 @@
   <h2>Reviews</h2>
    <form action="/reviews" method="post">
 
-    <label for="name">Name</label>
+    <label for="name">Name</label><br>
     <input id="name" type="text" name="name"><br>
 
-    <label for="rating">Rating</label>
+    <label for="rating">Rating</label><br>
       1<input type="radio" name="rating" value="1" checked>
       2<input type="radio" name="rating" value="2">
       3<input type="radio" name="rating" value="3">
       4<input type="radio" name="rating" value="4">
       5<input type="radio" name="rating" value="5"><br>
 
-    <label for="expertise">Cooking Expertise</label>
+    <label for="expertise">Cooking Expertise</label><br>
       <select id="expertise" name="expertise">
       <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
       <option value="Sometimes Cook">Sometimes Cook</option>
@@ -120,7 +125,7 @@
       <option value="Professional Chef">Professional Chef</option>
     </select><br>
 
-    <label for="review">Review</label>
+    <label for="review">Review</label><br>
       <textarea id="review" name="review" cols="30" rows="6"></textarea>
 
     <input type="submit" value="Submit Review">
