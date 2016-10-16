@@ -9,9 +9,7 @@ DIV.container {
   transform: translate(-50%, -50%);
 }
 
-h1 { font-size: 60px; }
-
-h2 { font-size: 20px; }
+h1 { font-size: 80px; }
 
 body {
   background-image: url('index_bg.jpg');
@@ -28,21 +26,21 @@ body {
   color: white;
 }
 
-h1.main,p.demos {
-  -webkit-animation-delay: 18s;
-  -moz-animation-delay: 18s;
-  -ms-animation-delay: 18s;
-  animation-delay: 18s;
+a { text-decoration: none; }
+a:link { color: white; }
+a:visited { color: white; }
+a:hover { color: white; }
+a:active { color: white; }
+
+.notification {
+  font-size: 30px;
+  text-decoration: none;
+  animation-name: change;
 }
-.sp-container {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
-  background: -moz-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
-  background: -ms-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
-  background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+
+.notification:hover a p.new-label span{
+  display: none;
+}
+.notification:hover a p.new-label:after{
+  content: '20 days left';
 }
