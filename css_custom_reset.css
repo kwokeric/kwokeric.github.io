@@ -21,28 +21,35 @@ footer, header, menu, nav, section {
 header > img {
   width: 100px;
 }
+h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+nav {
+  display: inline-block;
+}
+
+nav ul li {
+  display:  inline-block;
+}
+
+nav ul li a {
+  padding: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
 body {
   line-height: 1.5;
 }
 ol, ul {
   list-style: none;
-}
-
-#navigation {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.list a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
 li a:hover {
