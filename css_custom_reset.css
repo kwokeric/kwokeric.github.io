@@ -1,0 +1,83 @@
+html, body, div,
+h1, h2, h3, p,
+dl, dt, dd, ol, ul, li,
+form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+footer, header,
+menu, nav, output, ruby, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* HTML5 display-role reset for older browsers */
+footer, header, menu, nav, section {
+  display: block;
+  font-family: Sans-Serif;
+}
+header > img {
+  width: 100px;
+}
+body {
+  line-height: 1.5;
+}
+ol, ul {
+  list-style: none;
+}
+
+#navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.list a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    width: 27px;
+    height: 27px;
+    background-image: url(../assets/stars.png);
+    vertical-align: bottom;
+}
+
+input[type="radio"]:checked {
+  background-position: 30px 30px;
+}
+
+ol li:nth-of-type(2n) {
+  background-color: whitesmoke;
+}
+ul li:nth-of-type(2n) {
+  background-color: whitesmoke;
+}
+
+input:last-child {
+    background: white;
+}
+
+input:last-child:hover {
+    -webkit-filter: brightness(90%);
+}
