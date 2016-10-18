@@ -1,0 +1,71 @@
+@font-face {
+    font-family: batman;
+    src: url("../assets/batmfa__.ttf");
+}
+
+body{
+  background-image: url("../assets/space.jpg");
+  text-align: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #D1F2EB;
+  font-family: batman;
+  font-size: 100px;
+}
+
+figure {
+  width: 550px;
+  margin: auto;
+}
+
+.hover:hover {
+  border-color: #F9E79F;
+}
+
+ul {
+  margin: 10px;
+  padding: 0;
+  float: left;
+  width: 150px;
+  height: 200px;
+  border-bottom: solid;
+  border-color: #fff;
+  border-width: 10px;
+  vertical-align: bottom;
+  display: flex;
+  flex-direction: column-reverse;
+  content: "";
+}
+
+li {
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.disc-1{
+  background-color: #D1F2EB;
+  width: 40px;
+}
+
+.disc-2{
+  background-color: #76D7C4;
+  width: 70px;
+}
+
+.disc-3{
+  background-color: #1ABC9C;
+  width: 100px;
+}
+
+.disc-4{
+  background-color: #17A589;
+  width: 130px;
+}
