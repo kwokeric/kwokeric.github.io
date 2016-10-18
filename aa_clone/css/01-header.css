@@ -1,0 +1,28 @@
+/* PHASE 1: Header */
+
+body {
+  /* Write your css here... */
+  font-family: sans-serif;
+  font-weight: inherit;
+  font-size: inherit;
+  background-color: #eee;
+}
+
+.header {
+  font-size: 16px;
+  background-color: #f00;
+  color: white;
+  border-bottom: solid #ccc 1px;
+}
+
+.header a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.header-nav {
+  width: 900px;
+  margin: auto;
+  border-left: solid #ccc 1px;
+  border-right: solid #ccc 1px;
+}
