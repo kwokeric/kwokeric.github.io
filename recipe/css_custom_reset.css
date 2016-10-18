@@ -1,41 +1,38 @@
-html, body, div,
-h1, h2, h3, p,
-dl, dt, dd, ol, ul, li,
-form, label,
-footer, header,
-menu, nav, output, ruby, section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  background: transparent;
+body {
+  font-family: Sans-Serif;
+  margin: 0 auto; /* Common Centering Technique */
 }
 
-footer, header, menu, nav, aside, section {
+header {
   display: block;
-  font-family: Sans-Serif;
+  width: 100%;
+  flex-direction: row;
+  justify-content:space-between;
+  vertical-align: top;
 }
 
 header > img {
   width: 100px;
+  height: 100px;
+  float: left;
+}
+
+h1 h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 h1 {
-  font-size: 25px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  font-size: 30px;
 }
 
 h2 {
   font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 nav {
   display: inline-block;
+  float: right;
 }
 
 nav ul li {
@@ -44,39 +41,28 @@ nav ul li {
 
 nav ul li a {
   display: inline-block;
-  color: white;
+  color: black;
   text-align: center;
   text-decoration: none;
-  padding: 14px 16px;
+  padding: 10px 16px;
   margin: 0;
   overflow: hidden;
-  background-color: #333;
+  border-bottom: solid;
+  border-color: #333;
 }
 
 nav ul li a:hover {
-  background-color: #111;
-}
-
-body {
-  margin: 0 auto; /* Common Centering Technique */
-  width: 900px;
-}
-
-section {
-  width: 700px;
-  display: inline-block;
-  vertical-align: top;
+  border-bottom: solid;
+  border-color: red;
 }
 
 aside {
-  width: 180px;
-  margin-right: 15px;
+  padding-right: 15px;
   display: inline-block;
-
 }
 
 .ingredients-list li {
- margin: 15px 0px;
+  padding: 15px 0px;
 }
 
 input[type="radio"] {
@@ -95,17 +81,18 @@ ol li:nth-of-type(2n) {
   background-color: whitesmoke;
   margin: 5px 0;
 }
-ul li:nth-of-type(2n) {
+
+aside > ul li:nth-of-type(2n) {
   background-color: whitesmoke;
   margin: 10px 0;
 }
 
 input:last-child {
-    background: white;
+  background: white;
 }
 
 input:last-child:hover {
-    -webkit-filter: brightness(90%);
+  -webkit-filter: brightness(90%);
 }
 
 select {
@@ -119,4 +106,8 @@ textarea {
 
 label {
   display: block;
+}
+
+img {
+  width: 100%;
 }
