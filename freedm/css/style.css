@@ -22,10 +22,13 @@ DIV.container {
   transform: translate(-50%, -50%);
 }
 
-h1 { font-size: 80px; }
+@font-face {
+    font-family: batman;
+    src: url("../assets/Raleway.ttf");
+}
 
 body {
-  background-image: url('index_bg.jpg');
+  background-image: url('../assets/index_bg.jpg');
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
@@ -38,6 +41,8 @@ body {
   vertical-align: middle;
   color: white;
 }
+
+h1 { font-size: 80px; }
 
 /* entire container, keeps perspective */
 .flip-container {
