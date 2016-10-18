@@ -1,6 +1,7 @@
 body {
   font-family: Sans-Serif;
-  margin: 0 auto; /* Common Centering Technique */
+  width: 80%;
+  margin: 0 auto;
 }
 
 header {
@@ -54,6 +55,13 @@ nav ul li a {
 nav ul li a:hover {
   border-bottom: solid;
   border-color: red;
+}
+
+.hambuger-dropdown {
+  background-image: url(../assets/hambuger.png);
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
 }
 
 aside {
@@ -111,3 +119,39 @@ label {
 img {
   width: 100%;
 }
+
+.hamburger-dropdown {
+  display: none;
+}
+
+@media all and (max-width: 800px) {
+  nav ul {
+    display: none;
+  }
+  .hamburger-dropdown {
+    display: block;
+  }
+
+  .hamburger-dropdown > li {
+    background: url(./assets/hamburger.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .hamburger-dropdown ul {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger-dropdown:hover ul {
+    display: flex;
+    background: ghostwhite;
+  }
+};
