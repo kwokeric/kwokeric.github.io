@@ -13,7 +13,7 @@ body{
 h1 {
   color: #D1F2EB;
   font-family: batman;
-  font-size: 100px;
+  font-size: 60px;
 }
 
 figure {
@@ -22,7 +22,7 @@ figure {
 }
 
 .hover:hover {
-  border-color: #F9E79F;
+  border-color: #634561;
 }
 
 ul {
@@ -32,7 +32,7 @@ ul {
   width: 150px;
   height: 200px;
   border-bottom: solid;
-  border-color: #fff;
+  border-color: #2F2337;
   border-width: 10px;
   vertical-align: bottom;
   display: flex;
