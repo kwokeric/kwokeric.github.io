@@ -1,0 +1,38 @@
+body {
+  background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-429842.jpg");
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed;
+}
+
+@font-face { font-family: Airways; src: url("../assets/Airways.ttf"); }
+@font-face { font-family: Raleway; src: url("../assets/Raleway.ttf"); }
+@font-face { font-family: batman;  src: url("../assets/batmfa__.ttf");
+}
+
+h1 {
+  font: 50px Airways, serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2 {
+  font: 50px Raleway, serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+h3 {
+  font: 45px batman, serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+a { text-decoration: none; }
+a:link { color: #E9DEC5; }
+a:visited { color: #E9DEC5; }
+a:hover { color: white; }
+a:active { color: white; }
