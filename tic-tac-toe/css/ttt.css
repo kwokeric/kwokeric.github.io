@@ -1,0 +1,60 @@
+body {
+  font-family: fantasy;
+  text-align: center;
+  background-image: url("../assets/space.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+ul {
+  vertical-align: middle;
+  display: block;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  float: left;
+  list-style: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: gray black black gray;
+  width: 31%;
+  height: 100%;
+  margin: 0;
+}
+
+.hover:hover {
+  background-color: gray;
+  opacity: 0.4;
+}
+
+.oh:before{
+  content: "O";
+}
+
+.oh, .ex{
+  background-color: #000;
+  opacity: 0.4;
+  font-family: fantasy;
+  font-size: 4em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.ex:before{
+  content: "X";
+}
+
+.oh {
+  color: #E74C3C;
+}
+
+.ex {
+  color: #3498DB;
+}
