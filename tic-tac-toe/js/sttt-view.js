@@ -1,4 +1,4 @@
-class View {
+class SuperView {
   constructor(game, $el) {
     this.board = this.setupBoard();
     this.game = game;
@@ -9,7 +9,7 @@ class View {
 
   setupBoard() {
     let board = "";
-    
+
     for (var i = 0; i < 3; i++) {
       board += "<ul>\n";
 
@@ -59,4 +59,4 @@ class View {
   }
 }
 
-module.exports = View;
+module.exports = SuperView;

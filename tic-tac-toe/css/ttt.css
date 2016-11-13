@@ -1,44 +1,52 @@
+@font-face {
+  font-family: orbiter;
+  src: url("../assets/earth_orbiter/earthorbiterital.ttf");
+}
+
 body {
-  font-family: fantasy;
-  text-align: center;
   background-image: url("../assets/space.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  font-family: orbiter;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+ul, li {
+  margin: auto;
+  padding: 0;
+  border-style: solid;
+  border-color: #eee;
 }
 
 ul {
   vertical-align: middle;
   display: block;
-  width: 300px;
-  height: 100px;
-  margin: 0 auto;
-  padding: 0;
+  width: 600px;
+  height: 200px;
+  border-width: 0 0 0 1px;
 }
 
 li {
   float: left;
   list-style: none;
   background-color: transparent;
-  border-style: solid;
-  border-color: gray black black gray;
-  width: 31%;
+  border-width: 1px 1px 1px 0;
+  box-sizing: border-box;
+  width: 33%;
   height: 100%;
-  margin: 0;
 }
 
 .hover:hover {
   background-color: gray;
-  opacity: 0.4;
-}
-
-.oh:before{
-  content: "O";
+  opacity: 0.2;
 }
 
 .oh, .ex{
   background-color: #000;
   opacity: 0.4;
-  font-family: fantasy;
+  font-family: sans-serif;
   font-size: 4em;
   font-weight: bold;
   display: flex;
@@ -49,12 +57,10 @@ li {
 
 .ex:before{
   content: "X";
-}
-
-.oh {
-  color: #E74C3C;
-}
-
-.ex {
   color: #3498DB;
+}
+
+.oh:before{
+  content: "O";
+  color: #E74C3C;
 }
